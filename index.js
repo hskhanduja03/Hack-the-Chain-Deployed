@@ -7,12 +7,14 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const expressSession=require("express-session");
+const cors = require("cors")
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const passport = require('passport');
 
 var app = express();
+app.use(cors());
 const PORT = process.env.PORT;
 app.listen(PORT, ()=>{
   console.log("Listening to port", PORT);
