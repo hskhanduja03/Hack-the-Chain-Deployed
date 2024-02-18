@@ -304,7 +304,7 @@
   }
   #image img{
     border-radius: 50%;
-    width: 100%;
+    width: 200px;
     height: 200px;
   }
   #userProfile{
